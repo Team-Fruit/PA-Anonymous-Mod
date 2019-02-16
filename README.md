@@ -7,12 +7,12 @@
   Allocate shuffled player names and colors. You can play with anonymity.
 </p>
 
-## In Lobby
-The color of the other army is displayed in white and you can not see the color.
+## In The Lobby
+The colour of the other team is displayed in white. And you cannot see the other teams colour.
 ![Lobby](https://github.com/Team-Fruit/PA-Anonymous-Mod/raw/master/.github/Lobby.png)
 
 ## When Starting
-The color of the other army is displayed in white and you can not see the color.
+The colour of the other team is displayed in white. You cannot see the other teams colour.
 ![Lobby](https://github.com/Team-Fruit/PA-Anonymous-Mod/raw/master/.github/LobbyCinematic.jpg)
 
 ## In Game
