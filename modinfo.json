@@ -1,7 +1,7 @@
 {
   "context": "server",
   "identifier": "net.teamfruit.pa.anonymous-mod",
-  "display_name": "Anonymous Armies Mod",
+  "display_name": "Anonymous Army Mod",
   "description": "Allocate shuffled player names and colors. You can play with anonymity.",
   "author": "Kamesuta",
   "version": "dev",
