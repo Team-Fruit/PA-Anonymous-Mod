@@ -1,0 +1,38 @@
+{
+  "context": "server",
+  "identifier": "net.teamfruit.pa.anonymous-mod",
+  "display_name": "Anonymous Armies Mod",
+  "description": "Allocate shuffled player names and colors. You can play with anonymity.",
+  "author": "Kamesuta",
+  "version": "dev",
+  "build": "112835",
+  "date": "2019-02-10",
+  "signature": " ",
+  "forum": " ",
+  "icon": "https://i.gyazo.com/094992151d71a5c14641e7b229e879bc.png",
+  "category":
+  [
+    "browser",
+    "ui",
+    "classic",
+    "titans"
+  ],
+  "scenes": {
+    "new_game": [
+      "coui://ui/mods/net.teamfruit.pa.anonymous-mod/new_game.js"
+    ],
+    "new_game_cinematic": [
+      "coui://ui/mods/net.teamfruit.pa.anonymous-mod/new_game_cinematic.js"
+    ],
+    "live_game_players": [
+      "coui://ui/mods/net.teamfruit.pa.anonymous-mod/live_game_players.js"
+    ],
+    "live_game_unit_alert": [
+      "coui://ui/mods/net.teamfruit.pa.anonymous-mod/live_game_unit_alert.js"
+    ],
+    "live_game_devmode": [
+      "coui://ui/mods/net.teamfruit.pa.anonymous-mod/live_game_devmode.js"
+    ]
+  },
+  "priority": 100
+}
