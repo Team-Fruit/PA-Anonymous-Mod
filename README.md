@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://i.gyazo.com/0cd38cb09e2a949ce5c408dd765c3260.png" alt="Anonymouos Mod Icon">
 </p>
-<h1 align="center">Anonymous Mod</h1>
+<h1 align="center">Anonymous Army Mod</h1>
 <p align="center">
   Anonymous names and colors for <a href="https://planetaryannihilation.com/">Planetary Annihilation: Titans</a><br>
   Allocate shuffled player names and colours. You can play with anonymity.
