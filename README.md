@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.gyazo.com/094992151d71a5c14641e7b229e879bc.png" alt="Anonymouos Mod Icon">
+  <img src="https://i.gyazo.com/0cd38cb09e2a949ce5c408dd765c3260.png" alt="Anonymouos Mod Icon">
 </p>
 <h1 align="center">Anonymous Mod</h1>
 <p align="center">
