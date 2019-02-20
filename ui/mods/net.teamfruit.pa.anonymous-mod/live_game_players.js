@@ -7,38 +7,32 @@
         return y;
     }
 
-    var stateValue = model.state;
-    model.state = ko.pureComputed({
-        read: function () {
-            var state = stateValue();
-            _.forEach(state.players, function (player) {
-                if (player.rawName === undefined)
-                    player.rawName = player.name;
-                var anonymousName = list[player.id % list.length];
-                if (state.spectator || player.id === model.orginalArmyId())
-                    player.name = player.rawName + " (Anonymous " + anonymousName + ")";
-                else
-                    player.name = "Anonymous " + anonymousName;
-            });
-            return state;
-        },
-        write: stateValue
+    var playersValue = model.players;
+    model.players = ko.computed(function () {
+        var players = playersValue();
+        _.forEach(players, function (player) {
+            if (player.rawName === undefined)
+                player.rawName = player.name;
+            var anonymousName = list[player.id % list.length];
+            if (model.isSpectator() || player.id === model.orginalArmyId())
+                player.name = player.rawName + " (Anonymous " + anonymousName + ")";
+            else
+                player.name = "Anonymous " + anonymousName;
+        });
+        return players;
     });
 
     var sortedPlayersArrayValue = model.sortedPlayersArray;
-    model.sortedPlayersArray = ko.pureComputed({
-        read: function () {
-            var teams = sortedPlayersArrayValue();
-            _.forEach(teams, function (players) {
-                players.sort(function (a, b) {
-                    return hash(b.id) - hash(a.id);
-                });
+    model.sortedPlayersArray = ko.computed(function () {
+        var teams = sortedPlayersArrayValue();
+        _.forEach(teams, function (players) {
+            players.sort(function (a, b) {
+                return hash(b.id) - hash(a.id);
             });
-            teams.sort(function (a, b) {
-                return hash(b[0].id) - hash(a[0].id);
-            });
-            return teams;
-        },
-        write: sortedPlayersArrayValue
+        });
+        teams.sort(function (a, b) {
+            return hash(b[0].id) - hash(a[0].id);
+        });
+        return teams;
     });
 })();
